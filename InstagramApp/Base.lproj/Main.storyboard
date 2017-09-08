@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstagramApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cek-cE-i7k">
+                                <rect key="frame" x="0.0" y="586" width="414" height="150"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="54F-8y-VZK"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zx4-i9-f6u">
+                                <rect key="frame" x="0.0" y="80" width="414" height="506"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="KsB-UT-WFt">
+                                        <rect key="frame" x="0.0" y="40" width="414" height="426"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KsB-UT-WFt" secondAttribute="trailing" id="750-ia-v5d"/>
+                                    <constraint firstItem="KsB-UT-WFt" firstAttribute="top" secondItem="zx4-i9-f6u" secondAttribute="top" constant="40" id="Vm3-Ov-G7r"/>
+                                    <constraint firstItem="KsB-UT-WFt" firstAttribute="leading" secondItem="zx4-i9-f6u" secondAttribute="leading" id="WNO-vs-Gtl"/>
+                                    <constraint firstAttribute="bottom" secondItem="KsB-UT-WFt" secondAttribute="bottom" constant="40" id="kgq-pD-JeT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70D-Is-7Io">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InstagramApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmo-Qu-ryO">
+                                        <rect key="frame" x="153" y="49" width="108" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xmo-Qu-ryO" secondAttribute="bottom" constant="10" id="QwM-ug-DOW"/>
+                                    <constraint firstItem="xmo-Qu-ryO" firstAttribute="centerX" secondItem="70D-Is-7Io" secondAttribute="centerX" id="ciu-uH-eTV"/>
+                                    <constraint firstAttribute="height" constant="80" id="jxe-26-mqN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cek-cE-i7k" firstAttribute="top" secondItem="zx4-i9-f6u" secondAttribute="bottom" id="67O-Ja-NOH"/>
+                            <constraint firstItem="70D-Is-7Io" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A0S-I5-uQg"/>
+                            <constraint firstItem="cek-cE-i7k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D4c-2b-5da"/>
+                            <constraint firstItem="70D-Is-7Io" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JQB-0G-8wK"/>
+                            <constraint firstAttribute="trailing" secondItem="cek-cE-i7k" secondAttribute="trailing" id="SCf-mg-yDX"/>
+                            <constraint firstItem="zx4-i9-f6u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ULY-w9-IEW"/>
+                            <constraint firstItem="zx4-i9-f6u" firstAttribute="top" secondItem="70D-Is-7Io" secondAttribute="bottom" id="j6J-oq-uMv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cek-cE-i7k" secondAttribute="bottom" id="ude-Do-cQB"/>
+                            <constraint firstAttribute="trailing" secondItem="zx4-i9-f6u" secondAttribute="trailing" id="uqL-x0-D4G"/>
+                            <constraint firstAttribute="trailing" secondItem="70D-Is-7Io" secondAttribute="trailing" id="z8c-Dk-IyG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="KsB-UT-WFt" id="LXN-Sq-hDw"/>
+                        <outlet property="myScrollView" destination="cek-cE-i7k" id="Fq0-1i-CW5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.png" width="1220" height="1220"/>
+    </resources>
+</document>
